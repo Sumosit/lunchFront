@@ -1,0 +1,78 @@
+.nav-pull {
+    z-index: 9999;
+    position: absolute;
+    width: 350px;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.fade-enter-active {
+    transform: translateX(0px);
+    transition: .5s;
+}
+
+.fade-leave-active {
+    transform: translateX(-350px);
+    transition: .5s;
+}
+
+.fade-enter {
+    transform: translateX(-350px);
+}
+
+.fade-leave-to /* .fade-leave-active below version 2.1.8 */
+{
+}
+
+[class*="btn-nav-pull"] {
+    z-index: 9999;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 40%;
+}
+
+[class*="btn-nav-pull"]:hover {
+}
+
+.nav-titles {
+    display: block;
+    margin-top: 60px;
+    margin-left: 10px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    color: white;
+}
+
+.nav-bar {
+    margin-top: 10px;
+    padding: 10px 0;
+    /*border-top: 2px solid #ffffff;*/
+    border-bottom: 2px solid #ffffff;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+.nav-bar:hover {
+    transition: all 0.3s;
+    background-color: #5a5a5a;
+}
+.nav-bar:active {
+    transition: all 0.3s;
+    background-color: #292929;
+}
+.nav-bar-over {
+    transition: all 0.3s;
+    border-radius: 0;
+}
+.nav-bar-leave {
+    transition: all 0.3s;
+    border-radius: 40%;
+}
